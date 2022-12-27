@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-/*
+
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -40,12 +40,14 @@ public class Employee {
 	@Column(name = "job_title", nullable = false, length = 255)
 	private String jobTitle;
 	
+	/*
 	@ManyToOne
 	@JoinColumn(name = "office_officecode")
 	private Office officeCode;
+	*/
 	
 	@OneToMany
 	@JoinColumn(name = "employee_employeenumber")
 	private List<Employee> employee;
 }
-*/
+
